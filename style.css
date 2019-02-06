@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-areas: 'header header header '
+                         'nav nav aside '
+                         'section section aside '
+                         'footer footer footer ';
+    grid-auto-rows: 10vh 15vh 50vh 40vh;                     
+}
+header{
+    grid-area: header;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header a{
+    color: white;
+    font-size: 12pt;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header a:nth-child(4){
+    font-size: 16pt;
+    color: green;
+}
+header a:hover{
+    font-size: 13pt;
+    font-weight: bold;
+}
+nav{
+    grid-area: nav;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    color: black;
+    font-size: 25pt;
+}
+aside{
+    grid-area: aside;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+section{
+    grid-area: section;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+aside p{
+    width: 150px;
+    font-size: 10pt;
+}
+aside h2{
+    font-size: 14pt;
+}
+section img{
+    width: 300px;
+    height: 300px;
+}
+footer{
+grid-area: footer;
+background-color: green;
+}
